@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCrDJVmMeFbD5h54vd3mZdrJkMwMsAdPmE",
+        authDomain: "applications-js.firebaseapp.com",
+        databaseURL: "https://applications-js-default-rtdb.firebaseio.com",
+        projectId: "applications-js",
+        storageBucket: "applications-js.appspot.com",
+        messagingSenderId: "921820609090",
+        appId: "1:921820609090:web:deb3d3f6de58fdeb308bdb"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>User - Home</title>
+    
+  </head>
+  <body onload="getDishesChi()" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: darkorange;">FoodFest.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="userHome.html">Home</a>
+                  </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#fff;">
+                            <li><a class="dropdown-item active" href="chinese.html">Chinese</a></li>
+                            <li><a class="dropdown-item" href="bbq.html">BBQ</a></li>
+                            <li><a class="dropdown-item" href="fastfood.html">Fast Food</a></li>
+                            <li><a class="dropdown-item" href="desi.html">Desi</a></li>
+                            <li><hr></li>
+                            <li><a class="dropdown-item" href="free.html">Free Delivery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Order Status</a>
+                  </li>
+                </ul>
+          </div>
+          <div>
+              <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#loginModal" style="margin-left: 5px;" onclick="logout()">Sign Out</button>
+          </div>
+
+      </div>
+  </nav>
+      <h1 style="text-align: center; color: #000;">Chinese Food</h1>
+      <div id="cards" style="display: flex; flex-direction: row; flex-wrap: wrap;" class="row row-cols-1 row-cols-md-4 g-5">
+
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+  </body>

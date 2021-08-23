@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCrDJVmMeFbD5h54vd3mZdrJkMwMsAdPmE",
+      authDomain: "applications-js.firebaseapp.com",
+      databaseURL: "https://applications-js-default-rtdb.firebaseio.com",
+      projectId: "applications-js",
+      storageBucket: "applications-js.appspot.com",
+      messagingSenderId: "921820609090",
+      appId: "1:921820609090:web:deb3d3f6de58fdeb308bdb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Create Account</title>
+</head>
+
+<body
+  style="height: 100vh; background-image:url(images/lily-banse--YHSwy6uqvk-unsplash.jpg); background-repeat: no-repeat; background-size: cover;">
+  <div class="container" style="text-align: center; padding-top: 20vh ;">
+    <h1 style="color: #fff; margin-bottom: 10px; text-shadow: 4px 4px 4px black;">Sign Up as :</h1>
+    <button class="btn btn-success" style="box-shadow: 2px 2px 6px black;" onclick="customer()">Customer</button>
+    <br>
+    <br>
+    <h2 style="color: #fff; margin-bottom: 10px; text-shadow: 4px 4px 4px black;"> OR </h2>
+<br>
+    <button class="btn btn-warning" style="box-shadow: 2px 2px 6px black; color: #fff;" onclick="resturaunt()">Resturaunt</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
